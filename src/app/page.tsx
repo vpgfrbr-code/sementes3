@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Home() {
@@ -42,12 +41,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
           <div className="flex items-center space-x-3">
             {/* Logomarca oficial integrada */}
-            <div className="relative w-12 h-12 rounded-full overflow-hidden border border-[#C5A880]">
-              <Image 
+            <div className="relative w-12 h-12 rounded-full overflow-hidden border border-[#C5A880] bg-white flex items-center justify-center">
+              <img 
                 src="/logo-coruja.jpg" 
                 alt="Coruja Genetics & Seeds Logo" 
-                fill 
-                className="object-cover"
+                className="w-full h-full object-cover rounded-full"
               />
             </div>
             <span className="font-bold text-lg tracking-wide text-[#1B3022]">
@@ -103,13 +101,11 @@ export default function Home() {
 
             <div className="lg:col-span-5 flex justify-center">
               <div className="relative w-72 h-72 sm:w-96 sm:h-96 rounded-full p-4 bg-gradient-to-b from-[#C5A880]/20 to-[#2C4A35]/10 border border-[#C5A880]/40 shadow-2xl flex items-center justify-center">
-                <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden shadow-inner border-2 border-[#C5A880]">
-                  <Image 
+                <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden shadow-inner border-2 border-[#C5A880] flex items-center justify-center bg-white">
+                  <img 
                     src="/logo-coruja.jpg" 
                     alt="Selo Coruja Genetics" 
-                    fill 
-                    className="object-cover"
-                    priority
+                    className="w-full h-full object-cover rounded-full"
                   />
                 </div>
               </div>
@@ -158,8 +154,8 @@ export default function Home() {
       <footer className="bg-[#1B3022] text-[#FBF9F5] py-12 border-t border-[#C5A880]/30 mt-auto">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center space-x-3">
-            <div className="relative w-10 h-10 rounded-full overflow-hidden border border-[#C5A880]">
-              <Image src="/logo-coruja.jpg" alt="Logo" fill className="object-cover" />
+            <div className="relative w-10 h-10 rounded-full overflow-hidden border border-[#C5A880] bg-white flex items-center justify-center">
+              <img src="/logo-coruja.jpg" alt="Logo" className="w-full h-full object-cover rounded-full" />
             </div>
             <span className="font-semibold text-sm tracking-wider">Sementes de Coleção | Coruja Genetics & Seeds</span>
           </div>
