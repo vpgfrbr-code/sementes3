@@ -100,11 +100,11 @@ export default function Home() {
 
             <div className="lg:col-span-5 flex justify-center">
               <div className="relative w-72 h-72 sm:w-96 sm:h-96 rounded-full p-4 bg-gradient-to-b from-[#C5A880]/20 to-[#2C4A35]/10 border border-[#C5A880]/40 shadow-2xl flex items-center justify-center">
-                <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden shadow-inner border-2 border-[#C5A880]">
+                <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden shadow-inner border-2 border-[#C5A880] bg-white flex items-center justify-center">
                   <img 
                     src="/logo-coruja.jpg" 
                     alt="Selo Coruja Genetics" 
-                    className="absolute inset-0 w-full h-full object-cover rounded-full"
+                    className="w-full h-full object-contain p-2"
                   />
                 </div>
               </div>
