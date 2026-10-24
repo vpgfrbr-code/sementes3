@@ -41,7 +41,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <div className="relative w-12 h-12 rounded-full overflow-hidden border border-[#C5A880] bg-[#1B3022] flex items-center justify-center shadow-sm">
-              <span className="text-[#C5A880] font-extrabold text-xs tracking-tighter">CORUJA</span>
+              <svg className="w-8 h-8 text-[#C5A880]" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+              </svg>
             </div>
             <span className="font-bold text-lg tracking-wide text-[#1B3022]">
               Sementes de Coleção
@@ -96,11 +98,15 @@ export default function Home() {
 
             <div className="lg:col-span-5 flex justify-center">
               <div className="relative w-72 h-72 sm:w-96 sm:h-96 rounded-full p-4 bg-gradient-to-b from-[#C5A880]/20 to-[#2C4A35]/10 border border-[#C5A880]/40 shadow-2xl flex items-center justify-center">
-                <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-2 border-[#C5A880] bg-[#1B3022] flex flex-col items-center justify-center text-center p-6 text-[#FBF9F5] shadow-inner">
-                  <span className="text-xs uppercase tracking-widest text-[#C5A880] font-semibold mb-2">Vault Seal</span>
-                  <h3 className="text-3xl font-extrabold tracking-wider mb-1 text-[#FBF9F5]">CORUJA</h3>
-                  <p className="text-xs tracking-widest text-[#C5A880] uppercase">Genetics & Seeds</p>
-                  <div className="mt-4 w-16 h-0.5 bg-[#C5A880]"></div>
+                <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden shadow-inner border-2 border-[#C5A880] bg-[#1B3022] flex flex-col items-center justify-center text-center p-6 text-[#FBF9F5]">
+                  <div className="w-20 h-20 rounded-full border border-[#C5A880] bg-[#FBF9F5]/10 flex items-center justify-center mb-4 shadow-md">
+                    <svg className="w-12 h-12 text-[#C5A880]" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                    </svg>
+                  </div>
+                  <span className="text-[10px] uppercase tracking-widest text-[#C5A880] font-semibold mb-1">Vault Edition</span>
+                  <h3 className="text-xl font-extrabold tracking-wider mb-1 text-[#FBF9F5]">CORUJA GENETICS</h3>
+                  <p className="text-[10px] tracking-widest text-[#C5A880] uppercase">Seeds & Preservation</p>
                 </div>
               </div>
             </div>
@@ -149,7 +155,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center space-x-3">
             <div className="relative w-10 h-10 rounded-full overflow-hidden border border-[#C5A880] bg-[#1B3022] flex items-center justify-center">
-              <span className="text-[#C5A880] font-bold text-[10px]">CORUJA</span>
+              <svg className="w-6 h-6 text-[#C5A880]" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+              </svg>
             </div>
             <span className="font-semibold text-sm tracking-wider">Sementes de Coleção | Coruja Genetics & Seeds</span>
           </div>
