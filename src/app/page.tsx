@@ -1,5 +1,3 @@
-
-
 import Link from 'next/link';
 
 export default function Home() {
@@ -36,20 +34,23 @@ export default function Home() {
     }
   ];
 
-  // Logomarca oficial Coruja Genetics codificada diretamente em alta qualidade
+  // Logomarca oficial Coruja Genetics estruturada em alta definição
   const corujaLogoSvg = (
-    <svg viewBox="0 0 200 200" className="w-full h-full object-cover bg-[#1B3022] p-2">
-      <circle cx="100" cy="100" r="90" fill="#1B3022" stroke="#C5A880" strokeWidth="6" />
-      <circle cx="100" cy="100" r="75" fill="#FBF9F5" stroke="#C5A880" strokeWidth="2" />
-      {/* Estilização centralizada da Coruja Boutique */}
-      <path d="M70 70 Q100 45 130 70 Q145 100 130 140 Q100 170 70 140 Q55 100 70 70 Z" fill="#1B3022" stroke="#C5A880" strokeWidth="4" />
-      <circle cx="85" cy="95" r="14" fill="#C5A880" />
-      <circle cx="115" cy="95" r="14" fill="#C5A880" />
-      <circle cx="87" cy="95" r="5" fill="#1B3022" />
-      <circle cx="113" cy="95" r="5" fill="#1B3022" />
-      <polygon points="100,105 92,125 108,125" fill="#C5A880" />
-      <text x="100" y="155" fontSize="12" fontWeight="bold" fill="#C5A880" textAnchor="middle" letterSpacing="2">CORUJA</text>
-    </svg>
+    <div className="w-full h-full rounded-full bg-[#1B3022] border-2 border-[#C5A880] flex flex-col items-center justify-center p-2 shadow-inner">
+      <div className="w-10/12 h-10/12 rounded-full border border-[#C5A880]/60 bg-[#FBF9F5] flex flex-col items-center justify-center relative overflow-hidden">
+        {/* Estilização da Coruja Boutique */}
+        <div className="absolute inset-1 rounded-full border border-[#C5A880]/30 flex items-center justify-center">
+          <div className="text-center">
+            <span className="block text-[9px] font-extrabold tracking-tighter text-[#1B3022]">CORUJA</span>
+            <div className="flex justify-center space-x-1 my-0.5">
+              <div className="w-2 h-2 rounded-full bg-[#C5A880]"></div>
+              <div className="w-2 h-2 rounded-full bg-[#C5A880]"></div>
+            </div>
+            <span className="block text-[7px] font-semibold tracking-widest text-[#2C4A35]">GENETICS</span>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 
   return (
@@ -58,7 +59,7 @@ export default function Home() {
       <header className="sticky top-0 z-50 bg-[#FBF9F5]/90 backdrop-blur-md border-b border-[#C5A880]/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-[#C5A880] shadow-md bg-white flex items-center justify-center">
+            <div className="relative w-12 h-12 rounded-full overflow-hidden shadow-md">
               {corujaLogoSvg}
             </div>
             <span className="font-bold text-lg tracking-wide text-[#1B3022]">
@@ -114,7 +115,7 @@ export default function Home() {
 
             <div className="lg:col-span-5 flex justify-center">
               <div className="relative w-72 h-72 sm:w-96 sm:h-96 rounded-full p-4 bg-gradient-to-b from-[#C5A880]/20 to-[#2C4A35]/10 border border-[#C5A880]/40 shadow-2xl flex items-center justify-center">
-                <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-[#C5A880] bg-white flex items-center justify-center">
+                <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden shadow-2xl">
                   {corujaLogoSvg}
                 </div>
               </div>
@@ -163,7 +164,7 @@ export default function Home() {
       <footer className="bg-[#1B3022] text-[#FBF9F5] py-12 border-t border-[#C5A880]/30 mt-auto">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center space-x-3">
-            <div className="relative w-10 h-10 rounded-full overflow-hidden border border-[#C5A880] bg-white flex items-center justify-center">
+            <div className="relative w-10 h-10 rounded-full overflow-hidden shadow-sm">
               {corujaLogoSvg}
             </div>
             <span className="font-semibold text-sm tracking-wider">Sementes de Coleção | Coruja Genetics & Seeds</span>
